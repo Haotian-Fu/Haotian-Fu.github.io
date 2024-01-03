@@ -52,9 +52,8 @@
     {% endif %}
     {% if user.cv_link %}
       <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
-        <a href="{{ user.cv_link }}" >
-          CV
-        </a>
+        {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
+        {{user.cv_link}}}
       </div>
     {% endif %}
   </div>
