@@ -52,3 +52,80 @@
 .min-height-full {
   min-height: 100vh;
 }
+
+/* 导航栏容器样式 */
+.navbar-container {
+  background-color: #333; /* 背景颜色 */
+  padding: 10px; /* 内边距 */
+}
+
+/* 导航栏样式 */
+.navbar {
+  list-style: none; /* 去掉列表样式 */
+  margin: 0;
+  padding: 0;
+  display: flex; /* 使用 Flex 布局，使链接水平排列 */
+}
+
+/* 导航链接样式 */
+.navbar a {
+  text-decoration: none; /* 去掉下划线 */
+  color: #000; /* 文本颜色 */
+  margin-right: -16px; /* 右侧间距 */
+  margin-left: 36px; /* 左侧间距 */
+  font-weight: bold; /* 字体加粗 */
+  position: relative; /* 相对定位 */
+  transition: color 0.3s; /* 添加颜色过渡效果 */
+  font-size: 24px;
+}
+
+/* 悬停时修改链接颜色及显示底部bar */
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* 底部bar样式 */
+.navbar a::after {
+  content: ''; /* 生成一个空内容的伪元素 */
+  display: block;
+  width: 0; /* 初始时宽度为0 */
+  height: 3px; /* 底部bar高度 */
+  background-color: #ffcc00; /* 底部bar颜色 */
+  position: absolute; /* 绝对定位相对于链接 */
+  bottom: 0; /* 距离底部0px */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 平移至水平居中 */
+  transition: width 0.3s; /* 添加宽度过渡效果 */
+}
+
+/* 悬停时显示底部bar */
+.navbar a:hover::after {
+  width: calc(100% - 40px); /* 宽度变为100%减去左右margin的总和 */
+}
+
+/* 将导航栏设置为水平排列 */
+.navbar li {
+  display: inline-block;
+}
+
+/* 设置子菜单样式 */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #333; /* 子菜单背景颜色 */
+  padding: 10px;
+  list-style: none;
+}
+
+/* 子菜单链接样式 */
+.submenu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+}
+
+/* 显示子菜单 */
+.navbar li:hover .submenu {
+  display: block;
+}

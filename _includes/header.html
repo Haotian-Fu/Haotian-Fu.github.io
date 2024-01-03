@@ -14,7 +14,7 @@
   {% assign page_title = page.title %}
   {% assign meta_description = page.content | strip_html | strip_newlines | xml_escape | truncate: 300 %}
 {% else %}
-  {% assign page_title = user.name %}
+  {% assign page_title = "Haotian Fu" %}
   {% assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 %}
 {% endif %}
 
@@ -31,3 +31,19 @@
     <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
   </head>
   <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/pub">Publication</a></li>
+        <li><a href="/CV">CV</a></li>
+        <!-- Add more navigation links as needed -->
+      </ul>
+    </nav>
+
+    <!-- Rest of your existing HTML content -->
+
+  </body>
+</html>
+
