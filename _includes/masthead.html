@@ -4,26 +4,43 @@
   {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {% endif %}
 
-<img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
-<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
+<img src="https://drive.google.com/uc?id=1jw8ieUhQCBwRiXw6sSPQuu1CW7I-hK6r" class="circle mb-3" style="max-width: 150px;">
+<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}Haotian Fu (付昊天){% else %}{{ user.login }}{% endif %}</h1>
 <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
   {{ user.bio }}
 </p>
 
+<!--<div class="{{ metadata_styles }}">-->
+<!--  {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}-->
+<!--  <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>-->
+<!--    {{ user.email }}-->
+<!--  </a>-->
+<!--</div>-->
+<!--<div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">-->
+<!--  {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}-->
+<!--  {{ user.location }}-->
+<!--</div>-->
+<!--<div class="{{ metadata_styles }}">-->
+<!--  {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:location %}-->
+<!--  <a href="mailto:{{ user.cv_link }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>-->
+<!--    {{ user.cv_link }}-->
+<!--  </a>-->
+<!--</div>-->
+
 {% if include.metadata %}
   <div class="f4 mb-6">
     {% if user.name %}
-      <div class="{{ metadata_styles }}">
+      <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
-        <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        <a href="https://github.com/{{ user.login }}">
           @{{ user.login }}
         </a>
       </div>
     {% endif %}
     {% if user.email %}
-      <div class="{{ metadata_styles }}">
+      <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        <a href="mailto:{{ user.email }}" >
           {{ user.email }}
         </a>
       </div>
@@ -49,14 +66,6 @@
     {% endif %}
     {% if user.hireable %}
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
-    {% endif %}
-    {% if user.cv_link %}
-      <div class="{{ metadata_styles }}">
-        {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:location %}
-        <a href="mailto:{{ user.cv_link }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          {{ user.cv_link }}
-        </a>
-      </div>
     {% endif %}
   </div>
 {% endif %}
