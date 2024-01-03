@@ -64,7 +64,7 @@ topics:
     web_url: https://github.com/pytorch/pytorch
     image_url: https://avatars.githubusercontent.com/u/21003710?s=48&amp;v=4
 
-  - name: Skikit-learn
+  - name: Scikit-learn
     web_url: https://github.com/topics/scikit-learn
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/scikit-learn/scikit-learn.png
 
