@@ -52,12 +52,37 @@ location: Shanghai, China
 
 topics:
   - name: Machine Learning
+    web_url: https://github.com/topics/machine-learning
 
   - name: Deep Learning
+    web_url: https://github.com/topics/deep-learning
+
+  - name: Convex Optimization
+    web_url: https://en.wikipedia.org/wiki/Convex_optimization
+
+  - name: Pytorch
+    web_url: https://github.com/pytorch/pytorch
+    image_url: https://avatars.githubusercontent.com/u/21003710?s=48&amp;v=4
+
+  - name: Skikit-learn
+    web_url: https://github.com/topics/scikit-learn
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/scikit-learn/scikit-learn.png
 
   - name: Git
     web_url: https://github.com/topics/git
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png
+
+  - name: Docker
+    web_url: https://github.com/topics/docker
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png
+
+  - name: LaTeX
+    web_url: https://github.com/topics/latex
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/latex/latex.png
+
+  - name: Markdown
+    web_url: https://github.com/topics/markdown
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/markdown/markdown.png
 
 bio:
   I am currently an undergraduate student majoring ECE.
