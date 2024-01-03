@@ -49,6 +49,8 @@ social_media:
 cv_link:
   <a href="/cv.html">CV</a>
 
+location:
+  Shanghai, China
 
 topics:
   - name: Machine Learning

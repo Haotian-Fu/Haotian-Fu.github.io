@@ -51,9 +51,11 @@
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}
     {% if user.cv_link %}
-      <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
-        {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
-        {{user.cv_link}}}
+      <div class="{{ metadata_styles }}">
+        {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:location %}
+        <a href="mailto:{{ user.cv_link }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+          {{ user.cv_link }}
+        </a>
       </div>
     {% endif %}
   </div>
