@@ -46,6 +46,10 @@ social_media:
   # website: http://your_website_url
   # youtube: your_username
 
+cv_link:
+  <a href="/cv.html">CV</a>
+
+
 topics:
   - name: Machine Learning
 

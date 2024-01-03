@@ -50,5 +50,12 @@
     {% if user.hireable %}
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}
+    {% if user.cv_link %}
+      <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
+        <a href="{{ user.cv_link }}" >
+          CV
+        </a>
+      </div>
+    {% endif %}
   </div>
 {% endif %}
