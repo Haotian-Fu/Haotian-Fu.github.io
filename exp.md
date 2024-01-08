@@ -14,7 +14,7 @@ title: Experience
 <ul>
   <li>Cooperated with Ph.D. Students to delve into the optimization of video streaming tasks of edge servers, proposed a novel method based on a multi-agent reinforcement learning algorithm to enhance the performance of edge video stream analysis under long-term energy constraints</li>
   <li>Improved code framework for deep reinforcement learning, conducted video compression and offloading under long-term energy constraints to maximize the long-term rewards of video task processing</li>
-  <li>Tested and analyzed the impact of activation functions, learning rates, exploratory strategies (ε − greedy), and other factors on deep reinforcement learning</li>
+  <li>Tested and analyzed the impact of activation functions, learning rates, exploratory strategies (ε−greedy), and other factors on deep reinforcement learning</li>
   <li>Conducted sensitivity analysis on learning rates and the number of agents, performed pressure testing on our proposed working flow</li>
   <li>Tuned hyperparameters for further optimization, successfully visualized data, and performed analysis by using Python</li>
 </ul>
