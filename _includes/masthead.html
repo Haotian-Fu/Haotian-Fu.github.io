@@ -56,7 +56,8 @@
                  class="tooltipped tooltipped-se"
                  aria-label="{{ service.name }}: {{ handle }}">
                 {{ service.icon_svg }}
-                <span class="d-none">{{ service.name }}</span>
+                <!-- <span class="d-none">{{ service.name }}</span> -->
+                <span class="ml-1">{{ service.name }}: {{ handle }}</span>
               </a>
             </div>
           {% endif %}
