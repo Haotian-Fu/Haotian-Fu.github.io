@@ -17,6 +17,12 @@ title: About Me
     margin-bottom: 3rem;
   }
 
+  /* 竖版照片专用：宽度窄一点，高度自然跟着缩小 */
+  .runner-gallery-image--portrait {
+    flex: 0 1 260px;     /* 这两个数字可以根据效果微调，比如 240 或 280 */
+    max-width: 260px;
+  }
+
   /* 偶数卡片左右对调，营造“交错”的 gallery 效果 */
   .runner-gallery-card:nth-child(even) {
     flex-direction: row-reverse;
@@ -94,22 +100,23 @@ title: About Me
 
   <!-- Card 2 -->
   <div class="runner-gallery-card">
-    <div class="runner-gallery-image">
+  <div class="runner-gallery-image">
       <img src="/assets/img/HM.jpg"
-           alt="Running a half marathon in Brooklyn">
-    </div>
-    <div class="runner-gallery-text">
+          alt="Running a half marathon in Brooklyn">
+  </div>
+  <div class="runner-gallery-text">
       <div class="runner-gallery-title">Chasing the Half Marathon</div>
       <div class="runner-gallery-meta">Building towards sub-90 • Half marathon</div>
       <p>
-        This half marathon was less about the final time and more about
-        learning how to pace myself: staying patient in the first half,
-        accepting discomfort in the middle, and holding form when the
-        legs start to complain. Every attempt brings me one step closer
-        to a stable sub-90 performance.
+      This half marathon was less about the final time and more about
+      learning how to pace myself: staying patient in the first half,
+      accepting discomfort in the middle, and holding form when the
+      legs start to complain. Every attempt brings me one step closer
+      to a stable sub-90 performance.
       </p>
-    </div>
   </div>
+  </div>
+
 
   <!-- Card 3 -->
   <div class="runner-gallery-card">
