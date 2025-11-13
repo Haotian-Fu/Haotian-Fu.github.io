@@ -3,6 +3,135 @@ layout: default
 title: About Me
 ---
 
+<style>
+  /* Marathon gallery layout */
+  .runner-gallery {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .runner-gallery-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  /* 偶数卡片左右对调，营造“交错”的 gallery 效果 */
+  .runner-gallery-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .runner-gallery-image {
+    flex: 1 1 320px;
+    min-width: 260px;
+  }
+
+  .runner-gallery-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .runner-gallery-text {
+    flex: 1 1 320px;
+    min-width: 260px;
+    padding: 1rem 2rem;
+  }
+
+  .runner-gallery-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .runner-gallery-meta {
+    font-size: 0.9rem;
+    color: #6a737d;
+    margin-bottom: 0.4rem;
+  }
+
+  .runner-gallery-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+</style>
+
+<h1>A Marathon Runner</h1>
+
+<p>
+  Outside the lab, distance running is the other long-term project I work on.
+  Races give me checkpoints, but what I really enjoy is the quiet rhythm of
+  training: building mileage, fine-tuning pace, and seeing how far consistent
+  effort can take me. Here are a few moments that mean a lot to me as a runner.
+</p>
+
+<div class="runner-gallery">
+
+  <!-- Card 1 -->
+  <div class="runner-gallery-card">
+    <div class="runner-gallery-image">
+      <!-- 换成你自己的比赛照片路径 -->
+      <img src="/assets/img/race_brooklyn10k.jpg"
+           alt="Finishing a 10K race at Brooklyn beach">
+    </div>
+    <div class="runner-gallery-text">
+      <div class="runner-gallery-title">Brooklyn Beach 10K</div>
+      <div class="runner-gallery-meta">Fast morning race • Road 10K</div>
+      <p>
+        One of my favorite 10K races. I went out with controlled pace,
+        pushed in the last 2 kilometers, and finished with enough strength
+        to still smile for the camera. Races like this remind me that
+        training works, as long as I respect the process.
+      </p>
+      <!-- 如果有 Strava / 官方成绩链接可以放在这里，没有就删掉这一行 -->
+      <!-- <a class="runner-gallery-link" href="https://www.strava.com/activities/xxxx" target="_blank" rel="noopener">
+        View race details &rsaquo;
+      </a> -->
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="runner-gallery-card">
+    <div class="runner-gallery-image">
+      <img src="/assets/img/race_halfmarathon.jpg"
+           alt="Running a half marathon in New York">
+    </div>
+    <div class="runner-gallery-text">
+      <div class="runner-gallery-title">Chasing the Half Marathon</div>
+      <div class="runner-gallery-meta">Building towards sub-90 • Half marathon</div>
+      <p>
+        This half marathon was less about the final time and more about
+        learning how to pace myself: staying patient in the first half,
+        accepting discomfort in the middle, and holding form when the
+        legs start to complain. Every attempt brings me one step closer
+        to a stable sub-90 performance.
+      </p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="runner-gallery-card">
+    <div class="runner-gallery-image">
+      <img src="/assets/img/longrun_centralpark.jpg"
+           alt="Long run in Central Park">
+    </div>
+    <div class="runner-gallery-text">
+      <div class="runner-gallery-title">Quiet Long Run, Clear Mind</div>
+      <div class="runner-gallery-meta">Weekend long run • Marathon training</div>
+      <p>
+        Long runs are where most of the real work happens. I like starting
+        before the city fully wakes up, letting the route and the rhythm
+        slowly clear my head. By the time I finish, I usually have a few
+        new ideas for research—and a much better mood.
+      </p>
+    </div>
+  </div>
+
+</div>
+
 
 <h1>Personality</h1>
 
