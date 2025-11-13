@@ -28,27 +28,36 @@ defaults:
 #    projects:
 #    # - repo-name
 
-social_media:
-  # behance: your_username
-  # dribbble: your_username
-#   facebook: Haotian Fu
-  # hackerrank: your_username
-  # instagram: your_username
-  # keybase: your_username
-   linkedin: haotian-fu
-  # mastodon: your_username
-  # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  # twitter: your_username
-  # unsplash: your_username
-  # vk: your_username
-  # website: http://your_website_url
-  # youtube: your_username
+# social_media:
+#   # behance: your_username
+#   # dribbble: your_username
+# #   facebook: Haotian Fu
+#   # hackerrank: your_username
+#   # instagram: your_username
+#   # keybase: your_username
+#    linkedin: haotian-fu
+#   # mastodon: your_username
+#   # medium: your_username
+#   # stackoverflow: your_user_id
+#   # telegram: your_username
+#   # twitter: your_username
+#   # unsplash: your_username
+#   # vk: your_username
+#   # website: http://your_website_url
+#   # youtube: your_username
 
 cv_link: "/cv.html"
 
-location: Shanghai, China
+profile:
+  name: "Haotian Fu (付昊天)"
+  title: "PhD student in Computer Engineering at Stony Brook University. My research focuses on indoor localization, trajectory tracking, and vital sign monitoring."
+  email: "haotian.fu01@gmail.com"
+  location: "Stony Brook, NY, USA"
+  avatar: "/assets/img/avatar.jpg"
+
+social_media:
+  github: Haotian-Fu
+  linkedin: haotian-fu
 
 topics:
   - name: Machine Learning
