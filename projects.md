@@ -5,97 +5,99 @@ title: Experience
 
 <h1>Research Experience</h1>
 
-<h2>Adaptive video streaming processing under energy constraints</h2>
+<p>
+  <strong>Graduate Research Assistant</strong> · Stony Brook University<br>
+  Advisor: Prof. Fan Ye (IEEE Fellow) · Sep. 2024 – present
+</p>
 
-<p>Department of Computer Science, Shanghai Jiao Tong University</p>
-<p>Supervisor: <a href="https://www.cs.sjtu.edu.cn/~lijie/">Prof. Jie Li</a></p>
-
-<h3>Contributions:</h3>
+<h2>Multimodal Dataset Collection, Curation, and Quality Assessment</h2>
+<p><em>Mar. 2025 – present</em></p>
 <ul>
-  <li>Cooperated with Ph.D. Students to delve into the optimization of video streaming tasks of edge servers, proposed a novel method based on a multi-agent reinforcement learning algorithm to enhance the performance of edge video stream analysis under long-term energy constraints</li>
-  <li>Improved code framework for deep reinforcement learning, conducted video compression and offloading under long-term energy constraints to maximize the long-term rewards of video task processing</li>
-  <li>Tested and analyzed the impact of activation functions, learning rates, exploratory strategies (ε−greedy), and other factors on deep reinforcement learning</li>
-  <li>Conducted sensitivity analysis on learning rates and the number of agents, performed pressure testing on our proposed working flow</li>
-  <li>Tuned hyperparameters for further optimization, successfully visualized data, and performed analysis by using Python</li>
+  <li>
+    Led data acquisition and curation for <strong>113 long-duration sessions</strong> of continuous
+    activities of daily living (ADLs) in a four-room apartment sensing dataset, integrating
+    <strong>16 UWB sensors</strong> on 16 Raspberry Pis, <strong>6 Kinect</strong> video/depth cameras,
+    and <strong>3 wearable</strong> watches/fingertips to support home-health monitoring.
+  </li>
+  <li>
+    Developed and maintained an Android data-collection app and structured protocol with participant
+    guidance and timestamped activity annotations, enabling repeatable multimodal recordings for
+    downstream activity recognition, localization, and vital-sign monitoring research.
+  </li>
+  <li>
+    Implemented automated data-quality and metadata workflows to check recording integrity,
+    modality availability, and session-level consistency across heterogeneous sensing modalities.
+  </li>
+  <li>
+    Mentored undergrad/master’s students in data collection, metadata acquisition, quality assessment,
+    and Android application development.
+  </li>
+</ul>
+
+<br>
+
+<h2>Multi-Sensor Fusion for Robust Indoor Human Localization and Tracking (ScoreKFT)</h2>
+<p><em>Nov. 2024 – Feb. 2026</em></p>
+<ul>
+  <li>
+    Identified unreliable range estimation under multipath, occlusion, and clutter as a key obstacle
+    to contactless indoor human tracking during continuous ADLs in home and senior-care environments.
+  </li>
+  <li>
+    Developed <strong>ScoreKFT</strong>, a physics-informed range estimation and particle-filter-based
+    multi-sensor fusion framework integrating 16 UWB sensors, achieving
+    <strong>0.958 m range RMSE</strong> and over <strong>30% lower error</strong> than representative baselines.
+  </li>
+  <li>
+    Built a DBSCAN-based ground-truth pipeline from Kinect video/depth data to reconstruct human
+    positions and trajectories without prescribed walking paths.
+  </li>
+  <li>
+    Evaluated continuous localization and tracking across <strong>12 long-duration ADL sessions</strong>
+    using cross-modal depth-derived references in a fully furnished four-room apartment.
+  </li>
+  <li>
+    Outcome: first-author paper <strong>accepted</strong> at IEEE GLOBECOM 2026
+    (see <a href="/pub">Publication</a>).
+  </li>
+</ul>
+
+<br>
+
+<h2>Cross-Population Generalization Evaluation for ADL Recognition (ADL-CLIP)</h2>
+<p><em>July 2026 – present</em></p>
+<ul>
+  <li>
+    Reproduced a Transformer-based RF–text contrastive learning framework with PELT-based temporal
+    segmentation and iterative representation refinement for continuous ADL detection.
+  </li>
+  <li>
+    Conducted cross-population training and evaluation experiments for the ongoing journal extension,
+    using Slurm-managed NVIDIA H200/B40 GPU clusters and troubleshooting PyTorch/CUDA environments
+    to assess model generalization across participant populations.
+  </li>
 </ul>
 
 <br>
 <br>
 
-<h1>Selected Course Projects</h1>
+<h1>Undergraduate Research</h1>
 
-<h2>Interpretation for the relationship between the age and geometric structure of brain using Multiple
-Linear Regression</h2>
-
-<p>UM-SJTU JI, Shanghai Jiao Tong University</p>
-<p>Instructor: <a href="https://www.ji.sjtu.edu.cn/about/faculty-staff/faculty-directory/faculty-detail/33871/">Prof. Ailin Zhang</a></p>
-
-<h3>Contributions:</h3>
+<h2>Adaptive Video Streaming Processing under Energy Constraints</h2>
+<p>
+  Department of Computer Science, Shanghai Jiao Tong University<br>
+  Supervisor: <a href="https://www.cs.sjtu.edu.cn/~lijie/">Prof. Jie Li</a>
+</p>
 <ul>
-  <li>Aimed at carrying out reliable brain age prediction work based on the existing MRI image dataset</li>
-  <li>Constructed 3 regression models for analysis of a 408-dimension dataset with 1600 samples, used three
-feature selection method to deal with the predictors in high dimensional dataset</li>
-  <li>Established a linear regression by using R to show an explicit and interpretable linear relationship between
-brain age and brain geometric features</li>
-  <li>Analyzed the dataset and eliminated the batch effect by using Python, matched model diagnostics with the
-assumption of MLR</li>
-  <li>Conducted model evaluation, statistical inference and parameter interpretation</li>
+  <li>
+    Collaborated with Ph.D. students on optimizing edge-server video streaming under long-term energy
+    constraints using a multi-agent reinforcement learning approach.
+  </li>
+  <li>
+    Improved the deep reinforcement learning code framework for video compression and offloading,
+    and analyzed the impact of activation functions, learning rates, and exploration strategies.
+  </li>
+  <li>
+    Co-authored a paper published at IEEE GLOBECOM 2023 (second author).
+  </li>
 </ul>
-
-<br>
-
-<h2>How do we find the shortest way to another? – Using 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
-  <mi>k</mi>
-  <mo>-</mo>
-  <mi>d</mi>
-</math>
-tree and Dijkstra algorithm</h2>
-
-<p>UM-SJTU JI, Shanghai Jiao Tong University</p>
-<p>Instructor: Prof. David Garmire</p>
-
-<h3>Contributions:</h3>
-<ul>
-  <li>Used the 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
-  <mi>k</mi>
-  <mo>-</mo>
-  <mi>d</mi>
-</math>
-tree to complete the search for the 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
-  <mi>k</mi>
-</math>
-nearest neighbor, the Dijkstra algorithm to find the shortest path between two words in each given corpus</li>
-  <li>Designed a feasible mapping metric by applying graph theory to abstract each word as a point on a 2-dimensional plane, quantitatively representing the path between any two words in a corpus</li>
-  <li>Completed the functional implementation of the algorithm by using C++, ultimately achieving a time
-complexity of 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
-    <mi>O</mi>
-    <mo>(</mo>
-    <mi>M</mi>
-    <mi>N</mi>
-    <sup>
-      <mo>2</mo>
-    </sup>
-    <mo>)</mo>
-</math>
-and space complexity of 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
-  <mi>O</mi>
-  <mo>(</mo>
-  <mrow>
-    <mo>(</mo>
-    <mi>V</mi>
-    <mo>+</mo>
-    <mi>E</mi>
-    <mo>)</mo>
-    <mo>log</mo>
-    <mi>V</mi>
-  </mrow>
-  <mo>)</mo>
-</math>
-, visualized the design through Python</li>
-</ul>
-

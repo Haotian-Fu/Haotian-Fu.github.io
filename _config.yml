@@ -46,11 +46,13 @@ defaults:
 #   # website: http://your_website_url
 #   # youtube: your_username
 
-cv_link: "/cv.html"
+cv_link: "/CV.html"
+seeking_intern: true
+seeking_intern_text: "Seeking 2027 Summer Internship"
 
 profile:
   name: "Haotian Fu (付昊天)"
-  title: "PhD student in Computer Engineering at Stony Brook University. My research focuses on indoor localization, trajectory tracking, and vital sign monitoring."
+  title: "Ph.D. student in Computer Engineering at Stony Brook University. Research interests: multimodal sensing, sensing infrastructure, and spatial intelligence for indoor localization, activity recognition, and home-health monitoring."
   email: "haotian.fu01@gmail.com"
   location: "Stony Brook, NY, USA"
   avatar: "/assets/img/avatar.jpg"
@@ -60,25 +62,29 @@ social_media:
   linkedin: haotian-fu
 
 topics:
+  - name: Multimodal Sensing
+    web_url: https://github.com/topics/sensing
+    image_url: https://media.istockphoto.com/id/1007983682/zh/%E5%90%91%E9%87%8F/%E8%A5%BF%E7%93%9C%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88.jpg?s=612x612&w=0&k=20&c=tWKDYmV6CYQN--8Ma9JWikKxslawAchiB21fI_kdRtM=
+
   - name: Machine Learning
     web_url: https://github.com/topics/machine-learning
-    image_url: https://media.istockphoto.com/id/1007983682/zh/%E5%90%91%E9%87%8F/%E8%A5%BF%E7%93%9C%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88.jpg?s=612x612&w=0&k=20&c=tWKDYmV6CYQN--8Ma9JWikKxslawAchiB21fI_kdRtM=
+    image_url: https://bpic.51yuansu.com/pic3/cover/03/68/34/5be3921d0d8f7_610.jpg
 
   - name: Deep Learning
     web_url: https://github.com/topics/deep-learning
-    image_url: https://bpic.51yuansu.com/pic3/cover/03/68/34/5be3921d0d8f7_610.jpg
-
-  - name: Convex Optimization
-    web_url: https://en.wikipedia.org/wiki/Convex_optimization
     image_url: https://pic2.zhimg.com/v2-079ffd6e8865d3644fd2cfa1e7521e79_b.jpg
 
-  - name: Pytorch
+  - name: PyTorch
     web_url: https://github.com/pytorch/pytorch
     image_url: https://avatars.githubusercontent.com/u/21003710?s=48&amp;v=4
 
-  - name: Scikit-learn
-    web_url: https://github.com/topics/scikit-learn
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/scikit-learn/scikit-learn.png
+  - name: CUDA
+    web_url: https://developer.nvidia.com/cuda-zone
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cuda/cuda.png
+
+  - name: Python
+    web_url: https://github.com/topics/python
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
 
   - name: Git
     web_url: https://github.com/topics/git
@@ -88,10 +94,6 @@ topics:
     web_url: https://github.com/topics/docker
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png
 
-  - name: LaTeX
-    web_url: https://github.com/topics/latex
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/latex/latex.png
-
-  - name: Markdown
-    web_url: https://github.com/topics/markdown
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/markdown/markdown.png
+  - name: AWS
+    web_url: https://aws.amazon.com/
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aws/aws.png

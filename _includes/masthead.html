@@ -71,9 +71,13 @@
       {{ site.profile.location | default: user.location }}
     </div>
 
-    <!-- Hireable badge (仍然复用 user.hireable 逻辑，有就显示) -->
-    {% if user.hireable %}
-      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">
+    <!-- Seeking internship / hireable badge -->
+    {% if site.seeking_intern %}
+      <span title="{{ site.seeking_intern_text }}" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2 mb-3">
+        {{ site.seeking_intern_text }}
+      </span>
+    {% elsif user.hireable %}
+      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2 mb-3">
         Available for hire
       </span>
     {% endif %}
