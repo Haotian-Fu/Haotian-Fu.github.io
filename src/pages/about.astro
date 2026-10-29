@@ -4,56 +4,343 @@ import Base from '../layouts/Base.astro';
 <Base
   title="About"
   active="about"
-  description="Haotian Fu beyond the lab: distance running, including a 3:03 marathon and other race results."
+  description="Haotian Fu beyond the lab: distance running."
 >
   <section class="pagehead">
     <div class="container">
       <span class="eyebrow">About</span>
-      <h1>A marathon runner.</h1>
+      <h1>Beyond the Lab</h1>
       <p>
-        Outside the lab, distance running is the other long-term project I work on.
-        Races give me checkpoints; what I enjoy most is the quiet rhythm of training.
+        Outside of research, distance running has become another long-term pursuit of mine. 
+        Training for races gives me something to work toward, challenges me to push my limits, 
+        and reminds me that meaningful progress takes commitment and consistency.
+      </p>
+      <p>
+        Running has also sparked my curiosity about sports science, from training and recovery to nutrition 
+        and overall well-being. What started as a hobby has gradually become an important part of how I learn, 
+        grow, and take care of myself.
       </p>
     </div>
   </section>
 
-  <section class="section tight">
-    <div class="container">
-      <article class="runner-card">
-        <div class="runner-photo">
-          <img src="/assets/img/FM.jpg" alt="Finishing the Suffolk County Marathon in Babylon" />
-        </div>
-        <div class="runner-copy">
-          <div class="meta">First full marathon</div>
-          <h3>2025 Suffolk County Marathon</h3>
-          <div class="time-mark">3:03:34.7</div>
-          <p>Overall 5 / 317 · Age group 1 / 31</p>
-        </div>
-      </article>
-
-      <article class="runner-card">
-        <div class="runner-photo">
-          <img src="/assets/img/HM.jpg" alt="Running a half marathon in Brooklyn" />
-        </div>
-        <div class="runner-copy">
-          <div class="meta">First half marathon</div>
-          <h3>2025 NYCRuns Brooklyn Ice Cream Social Half &amp; 5K</h3>
-          <div class="time-mark">1:26:39</div>
-          <p>Overall 13 / 941 · Age group 3 / 234</p>
-        </div>
-      </article>
-
-      <article class="runner-card">
-        <div class="runner-photo">
-          <img src="/assets/img/10K.jpg" alt="Great Cow Harbor 10K in Northport" />
-        </div>
-        <div class="runner-copy">
-          <div class="meta">10K personal best</div>
-          <h3>2025 Great Cow Harbor 10K</h3>
-          <div class="time-mark">36:00.00</div>
-          <p>Overall 62 / 2243 · Age group 17 / 140</p>
-        </div>
-      </article>
+  <section class="section" id="upcoming-races">
+    <div class="container measure">
+      <h2 class="room-title">Upcoming races</h2>
+      <p>
+        Here lists multiple races I will participate in the next 6 months.
+        <br class="desktop-break" />
+        Please reach out to me if you are willing to run with me!!
+      </p>
+      <ul class="news">
+        <li>
+          <time datetime="2026-11-22">11/22/2026</time>
+          <span>
+            <a
+              href="https://www.philadelphiamarathon.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-link"
+            >
+              Philadelphia Marathon
+            </a>
+          </span>
+        </li>
+        <li>
+          <time datetime="2027-03-21">03/21/2027</time>
+          <span>
+            <a
+              href="https://www.nyrr.org/races-and-events/2027/2027-united-airlines-nyc-half"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-link"
+            >
+              NYRR NYC Half Marathon
+            </a>
+          </span>
+        </li>
+        <li>
+          <time datetime="2027-04-18">04/18/2027</time>
+          <span>
+            <a
+              href="https://jerseycitymarathon.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-link"
+            >
+              Jersey City Marathon
+            </a>
+          </span>
+        </li>
+        <li>
+          <time datetime="2027-04-25">04/25/2027</time>
+          <span>
+            <a
+              href="https://brooklynexperience.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-link"
+            >
+              NYCRuns Brooklyn Experience Half Marathon
+            </a>
+          </span>
+        </li>
+      </ul>
     </div>
   </section>
+
+  <section class="section" id="past-races">
+    <div class="container">
+      <h2 class="room-title">Past Race Results</h2>
+
+      <div class="catalog race-catalog">
+
+        <!-- Race 01: Full Marathon -->
+        <article class="catalog-item race-item">
+          <span class="catalog-no">01</span>
+
+          <div class="race-content">
+            <div class="race-info">
+              <span class="race-meta">First Full Marathon</span>
+              <h3>2025 Suffolk County Marathon</h3>
+
+              <div class="race-time">3:03:34.7</div>
+
+              <p class="race-ranking">
+                Overall 5 / 317 · Age Group 1 / 31
+              </p>
+            </div>
+
+            <figure class="race-photo">
+              <img
+                src="/assets/img/FM.jpg"
+                alt="Finishing the Suffolk County Marathon in Babylon"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </article>
+
+        <!-- Race 02: Half Marathon -->
+        <article class="catalog-item race-item">
+          <span class="catalog-no">02</span>
+
+          <div class="race-content">
+            <div class="race-info">
+              <span class="race-meta">First Half Marathon</span>
+              <h3>
+                2025 NYCRuns Brooklyn Ice Cream Social
+                Half &amp; 5K
+              </h3>
+
+              <div class="race-time">1:26:39</div>
+
+              <p class="race-ranking">
+                Overall 13 / 941 · Age Group 3 / 234
+              </p>
+            </div>
+
+            <figure class="race-photo">
+              <img
+                src="/assets/img/HM.jpg"
+                alt="Running a half marathon in Brooklyn"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </article>
+
+        <!-- Race 03: 10K -->
+        <article class="catalog-item race-item">
+          <span class="catalog-no">03</span>
+
+          <div class="race-content">
+            <div class="race-info">
+              <span class="race-meta">10K Personal Best</span>
+              <h3>2025 Great Cow Harbor 10K</h3>
+
+              <div class="race-time">36:00.00</div>
+
+              <p class="race-ranking">
+                Overall 62 / 2243 · Age Group 17 / 140
+              </p>
+            </div>
+
+            <figure class="race-photo">
+              <img
+                src="/assets/img/10K.jpg"
+                alt="Great Cow Harbor 10K in Northport"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* =========================================
+      Past Race Results
+      ========================================= */
+
+    .race-catalog {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .race-item {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: clamp(16px, 2.5vw, 36px);
+      padding: clamp(28px, 4vw, 48px) 0;
+      border-bottom: 1px solid #e5e1dc;
+    }
+
+    .race-item:first-child {
+      border-top: 1px solid #e5e1dc;
+    }
+
+    .race-item .catalog-no {
+      font-size: 0.9rem;
+      color: #999;
+      padding-top: 5px;
+    }
+
+    /* Information + photo */
+    .race-content {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
+      gap: clamp(24px, 4vw, 64px);
+      align-items: center;
+      min-width: 0;
+    }
+
+    .race-info {
+      min-width: 0;
+    }
+
+    .race-meta {
+      display: block;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    .race-info h3 {
+      font-size: clamp(1.3rem, 2vw, 1.8rem);
+      line-height: 1.35;
+      font-weight: 500;
+      margin: 0 0 24px;
+    }
+
+    .race-time {
+      font-family: inherit;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      font-variant-numeric: tabular-nums;
+      margin-bottom: 14px;
+    }
+
+    .race-ranking {
+      font-size: clamp(0.85rem, 1.1vw, 1rem);
+      line-height: 1.6;
+      color: #777;
+      margin: 0;
+    }
+
+    /* Race photos */
+    .race-photo {
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      aspect-ratio: 4 / 3;
+    }
+
+    .race-photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    @media (hover: hover) {
+      .race-photo:hover img {
+        transform: scale(1.03);
+      }
+    }
+
+    /* =========================================
+      Tablet
+      ========================================= */
+
+    @media (max-width: 900px) {
+      .race-content {
+        grid-template-columns: minmax(0, 1fr) 200px;
+        gap: 24px;
+      }
+
+      .race-info h3 {
+        font-size: 1.35rem;
+      }
+
+      .race-time {
+        font-size: 2.3rem;
+      }
+    }
+
+    /* =========================================
+      Mobile
+      ========================================= */
+
+    @media (max-width: 650px) {
+      .race-item {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 30px 0;
+      }
+
+      .race-content {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .race-meta {
+        font-size: 0.75rem;
+      }
+
+      .race-info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 18px;
+      }
+
+      .race-time {
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+      }
+
+      .race-ranking {
+        font-size: 0.9rem;
+      }
+
+      .race-photo {
+        max-width: 100%;
+        aspect-ratio: 16 / 10;
+      }
+    }
+    @media (max-width: 650px) {
+      .desktop-break {
+        display: none;
+      }
+    }
+  </style>
+
 </Base>
