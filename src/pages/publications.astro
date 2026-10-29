@@ -1,0 +1,71 @@
+---
+import Base from '../layouts/Base.astro';
+
+const scorekft = `@inproceedings{fu2026scorekft,
+  title     = {ScoreKFT: Robust Scoring-Based Range Estimation for Human Tracking in Realistic Home-Like Environments with UWB Radars},
+  author    = {Fu, Haotian and Liu, M. and Han, H. and Xie, Z. and Ye, Fan},
+  booktitle = {IEEE Global Communications Conference (GLOBECOM)},
+  year      = {2026},
+  note      = {Accepted}
+}`;
+---
+<Base
+  title="Publications"
+  active="publications"
+  description="Publications by Haotian Fu, including ScoreKFT at IEEE GLOBECOM 2026 and prior work at GLOBECOM 2023."
+>
+  <section class="pagehead">
+    <div class="container">
+      <span class="eyebrow">Publications</span>
+      <h1>Papers and artifacts.</h1>
+      <p>First-author sensing research at Stony Brook, plus undergraduate work on energy-constrained video streaming.</p>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <article class="pub">
+        <div class="pub-year">2026</div>
+        <div>
+          <h3>ScoreKFT: Robust Scoring-Based Range Estimation for Human Tracking in Realistic Home-Like Environments with UWB Radars</h3>
+          <p class="venue">2026 IEEE Global Communications Conference (GLOBECOM) · Accepted</p>
+          <p>
+            <strong>H. Fu</strong>, M. Liu, H. Han, Z. Xie, and F. Ye
+          </p>
+          <p>
+            Physics-informed UWB range scoring and particle-filter fusion for contactless human tracking
+            during continuous ADLs in a cluttered four-room apartment.
+          </p>
+          <div class="actions">
+            <a class="button light" href="#citation">BibTeX</a>
+            <a class="button ghost" href="/research">Project notes</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-year">2023</div>
+        <div>
+          <h3>Adaptive Processing for Video Streaming with Energy Constraint: A Multi-Agent Reinforcement Learning Method</h3>
+          <p class="venue">GLOBECOM 2023 · Kuala Lumpur · pp. 122–127</p>
+          <p>
+            H. Liu, <strong>H. Fu</strong>, S. Yuan, C. Wu, Y. Luo, and J. Li
+          </p>
+          <div class="actions">
+            <a class="button light" href="https://doi.org/10.1109/GLOBECOM54140.2023.10437053" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="citation" class="section alt">
+    <div class="container">
+      <span class="eyebrow">Citation</span>
+      <h2>ScoreKFT (GLOBECOM 2026)</h2>
+      <div class="cite-wrap">
+        <pre>{scorekft}</pre>
+      </div>
+    </div>
+  </section>
+</Base>

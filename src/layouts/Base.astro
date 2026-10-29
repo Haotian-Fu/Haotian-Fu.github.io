@@ -1,0 +1,65 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  active?: 'home' | 'research' | 'publications' | 'about' | 'cv';
+  description?: string;
+}
+
+const {
+  title = 'Haotian Fu',
+  active = 'home',
+  description = 'Ph.D. student in Computer Engineering at Stony Brook University. Research on multimodal sensing, indoor localization, and home-health monitoring. Seeking a 2027 summer internship.',
+} = Astro.props;
+
+const pageTitle = title === 'Haotian Fu' ? 'Haotian Fu' : `${title} · Haotian Fu`;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" href="/assets/img/avatar.jpg" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="/" class="brand">Haotian Fu</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
+        <div class="navlinks">
+          <a href="/" class={active === 'home' ? 'active' : undefined}>Home</a>
+          <a href="/research" class={active === 'research' ? 'active' : undefined}>Research</a>
+          <a href="/publications" class={active === 'publications' ? 'active' : undefined}>Publications</a>
+          <a href="/about" class={active === 'about' ? 'active' : undefined}>About</a>
+          <a href="/cv" class={active === 'cv' ? 'active' : undefined}>CV</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © {new Date().getFullYear()} Haotian Fu
+          <span class="dot">·</span>
+          Stony Brook, NY
+          <span class="dot">·</span>
+          <a href="mailto:haotian.fu01@gmail.com">haotian.fu01@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const links = document.querySelector('.navlinks');
+      toggle?.addEventListener('click', () => {
+        links?.classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>

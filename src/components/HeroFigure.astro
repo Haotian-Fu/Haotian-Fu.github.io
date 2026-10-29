@@ -1,0 +1,98 @@
+---
+const rfPath = Array.from({ length: 48 }, (_, i) => {
+  const x = i * 3.3;
+  const y = 28 + Math.sin(i * 0.38) * 10 + Math.cos(i * 0.17) * 6;
+  return `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`;
+}).join(' ');
+
+const imuPath = Array.from({ length: 48 }, (_, i) => {
+  const x = i * 3.3;
+  const y = 28 + Math.sin(i * 0.55 + 1.2) * 8 + Math.cos(i * 0.21) * 5;
+  return `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`;
+}).join(' ');
+---
+<figure class="capture" aria-label="Apartment sensing layout with synchronized UWB, RGB-D, and wearable streams">
+  <div class="capture-room">
+    <div class="viz-header">
+      <strong>Home sensing · four-room apartment</strong>
+      <span>16 UWB · 6 Kinect · wearables</span>
+    </div>
+    <svg viewBox="0 0 520 340" role="img" aria-label="Schematic of indoor localization with UWB radars and RGB-D cameras">
+      <rect width="520" height="340" rx="12" fill="#0c1d28"></rect>
+      <rect x="28" y="28" width="464" height="284" rx="8" fill="#123040" stroke="#2a5360"></rect>
+      <text x="40" y="50" fill="#8fb8c0" font-size="11" font-family="IBM Plex Sans, sans-serif">LIVING ROOM</text>
+      <rect x="70" y="64" width="150" height="36" rx="6" fill="#1a4552"></rect>
+      <text x="145" y="86" text-anchor="middle" fill="#9fd0c9" font-size="11">sofa / occluder</text>
+      <rect x="310" y="200" width="70" height="44" rx="6" fill="#18414e"></rect>
+      <text x="345" y="226" text-anchor="middle" fill="#9fb7be" font-size="10">table</text>
+      <circle cx="250" cy="168" r="22" fill="#d7b08a"></circle>
+      <rect x="236" y="188" width="28" height="46" rx="10" fill="#c9a07a"></rect>
+      <text x="250" y="252" text-anchor="middle" fill="#e8f4f2" font-size="11">participant</text>
+      <rect x="454" y="120" width="18" height="28" rx="3" fill="#31d5c2"></rect>
+      <path d="M454 134 L390 104 L390 164 Z" fill="#31d5c2" opacity="0.16"></path>
+      <text x="448" y="112" text-anchor="end" fill="#7ee0d4" font-size="11">RGB-D</text>
+      <circle cx="62" cy="268" r="10" fill="#f8b56c"></circle>
+      <path d="M72 268 A48 48 0 0 1 108 304" fill="none" stroke="#f8b56c" stroke-width="2" opacity="0.7"></path>
+      <path d="M72 268 A70 70 0 0 1 128 318" fill="none" stroke="#f8b56c" stroke-width="1.5" opacity="0.4"></path>
+      <text x="78" y="258" fill="#f8b56c" font-size="11">UWB radar</text>
+      <circle cx="430" cy="70" r="7" fill="#f8b56c"></circle>
+      <circle cx="80" cy="90" r="7" fill="#f8b56c"></circle>
+      <text x="92" y="94" fill="#f8b56c" font-size="10">×16</text>
+      <rect x="268" y="198" width="14" height="10" rx="3" fill="#8a99ff"></rect>
+      <text x="286" y="207" fill="#b7c4ff" font-size="11">IMU</text>
+      <text x="40" y="302" fill="#7d9aa3" font-size="10">ScoreKFT · contactless tracking during continuous ADLs</text>
+    </svg>
+  </div>
+  <div class="capture-streams">
+    <div class="viz-header">
+      <strong>Time-aligned modalities</strong>
+      <span>shared clock · home-like clutter</span>
+    </div>
+    <div class="stream-grid">
+      <div class="stream">
+        <span class="viz-label">RGB</span>
+        <svg viewBox="0 0 160 72" class="stream-art" aria-hidden="true">
+          <rect width="160" height="72" rx="6" fill="#163c48"></rect>
+          <rect x="18" y="38" width="50" height="18" fill="#2a5b66"></rect>
+          <circle cx="96" cy="30" r="10" fill="#d7b08a"></circle>
+          <rect x="90" y="40" width="12" height="20" fill="#c9a07a"></rect>
+        </svg>
+      </div>
+      <div class="stream">
+        <span class="viz-label">DEPTH</span>
+        <svg viewBox="0 0 160 72" class="stream-art" aria-hidden="true">
+          <defs>
+            <linearGradient id="depthGlow" x1="0" x2="1">
+              <stop offset="0" stop-color="#0b3a44"></stop>
+              <stop offset="1" stop-color="#3ad5c4"></stop>
+            </linearGradient>
+          </defs>
+          <rect width="160" height="72" rx="6" fill="#102f3a"></rect>
+          <circle cx="96" cy="34" r="16" fill="url(#depthGlow)" opacity="0.85"></circle>
+          <rect x="20" y="40" width="44" height="16" fill="#1d4d58"></rect>
+        </svg>
+      </div>
+      <div class="stream">
+        <span class="viz-label">UWB RF</span>
+        <svg class="wave" viewBox="0 0 160 56" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 28H160" stroke="#3b6068" stroke-dasharray="4 4"></path>
+          <path d={rfPath} stroke="#31d5c2" stroke-width="2" fill="none"></path>
+        </svg>
+      </div>
+      <div class="stream">
+        <span class="viz-label">WEARABLE</span>
+        <svg class="wave" viewBox="0 0 160 56" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 28H160" stroke="#3b6068" stroke-dasharray="4 4"></path>
+          <path d={imuPath} stroke="#f8b56c" stroke-width="2" fill="none"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="sync-bar" aria-hidden="true">
+      <i class="seg walk" style="width:28%"></i>
+      <i class="seg sit" style="width:36%"></i>
+      <i class="seg stand" style="width:36%"></i>
+      <b class="playhead" style="left:46%"></b>
+    </div>
+    <div class="viz-caption">Continuous ADLs · Walking → Sitting → Standing · UWB, RGB-D, and wearables on one timeline</div>
+  </div>
+</figure>
