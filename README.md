@@ -2,7 +2,7 @@
 
 学术个人主页：[haotian-fu.github.io](https://haotian-fu.github.io)
 
-版式参考 [Tanmay Srivastava](https://sites.google.com/view/tanmaysrivastava/home) 的白底图录、[Bote Zhou](https://botezhou.com/) 的大留白，以及实验室数据集站 `hof_website` 里的传感示意图。整体按艺术馆墙文来排：细导航、衬线标题、照片当展品。
+整体按艺术馆墙文来排：细导航、衬线标题、照片当展品。
 
 技术栈：**Astro** 静态站 → **GitHub Pages**。
 
